@@ -29,6 +29,6 @@ ENV UNISON_VERSION=2.48.3
 WORKDIR /root
 
 # Setup unison to run as a service
-VOLUME /unison
+VOLUME $UNISON_DIR
 COPY unison-run.sh /etc/service/unison/run
 EXPOSE 5000
